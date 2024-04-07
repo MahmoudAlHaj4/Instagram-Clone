@@ -1,0 +1,133 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+.login-form{
+    width: 23%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    gap: 10px;
+}
+.insta{
+    width: 25%;
+    height: 600px;
+    /* background-color: blue; */
+}
+.login{
+    gap: 10px;
+    border: 1px solid black;
+}
+.heading{
+    width: 100%;
+    height: 100px;
+    /* background-color: blueviolet; */
+}
+.login input{
+    width: 80%;
+    padding: 10px 20px;
+    background-color: buttonface;
+    
+}
+.inputs button{
+    width: 80%;
+    padding:7px 15px;
+    border-radius: 8px;
+    background-color: rgb(142, 142, 243);
+    color: white;
+}
+.links button{
+    width: 80%;
+    padding:7px 15px;
+    border-radius: 8px;
+    background-color: buttonface;
+    color: black;
+}
+.inputs{
+    /* background-color: lawngreen; */
+    width: 100%;
+    height: 200px;
+    gap: 10px;
+}
+.line {
+    border: none;
+    border-top: 1px solid black;
+    margin: 10px 0;
+}
+.links{
+    /* background-color: salmon; */
+    width: 100%;
+    height: 120px;
+    gap: 10px;
+}
+.link {
+    width: 100%;
+    /* background-color: rgb(165, 122, 40); */
+    height: 70px;
+    border: 1px solid black;
+
+}
+
+
+.imgs img{
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+}
+.signup-form {
+    width: 100%;
+    /* background-color: red; */
+    border: 1px solid black;
+
+    height: 700px;
+    gap: 10px;
+   
+}
+.links{
+    height: 150px;
+    /* background-color: aqua; */
+
+}
+p{
+    padding-left: 10px;
+    /* background-color: aqua; */
+    /* width: 80%; */
+    font-size: small;
+}
+.pp{
+    gap: 10px;
+}
+.s-inputs{
+    /* background-color: lawngreen; */
+    height: 400px;
+    gap: 10px;
+}
+
+.s-inputs input{
+    width: 80%;
+    padding:7px 15px;
+    border-radius: 8px;
+    background-color: buttonface;
+    color: white;
+}
+.s-inputs button{
+    width: 80%;
+    padding:7px 15px;
+    border-radius: 8px;
+    background-color: rgb(142, 142, 243);
+    color: white;
+}
+
+.heading img{
+    width: 160px;
+    background-color: white;
+    height: fit-content;
+}

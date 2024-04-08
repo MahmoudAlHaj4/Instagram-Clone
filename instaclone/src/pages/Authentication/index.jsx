@@ -6,11 +6,11 @@ import LoginForm from "./components/LoginForm";
 import SignupForm from "./components/Signup";
 
 const Authentication = ()=>{
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
 
   
     return (
-        <div className="main">
+        <div className="mainpage">
         <div className="home flex center">
           <div className="insta">
             <img src="https://www.instagram.com/images/instagram/xig/homepage/screenshots/screenshot2.png?__d=www" alt="" />

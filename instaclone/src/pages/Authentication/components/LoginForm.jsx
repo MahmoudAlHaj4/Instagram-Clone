@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const LoginForm = ({ setIsLogin }) => {
+  const navigate = useNavigate();
+
     return (
       <div className="login flex column center">
         <div className="heading flex center">
@@ -7,7 +11,7 @@ const LoginForm = ({ setIsLogin }) => {
         <div className="inputs flex column center">
           <input type="text" placeholder="Email" />
           <input type="text" placeholder="Password" />
-          <button>Login</button>
+          <button onClick={() => navigate('/home')}>Login</button>
           <span className="flex">
             <hr className="line" />
             OR

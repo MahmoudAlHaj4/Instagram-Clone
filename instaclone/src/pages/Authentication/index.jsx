@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css"
-import LoginForm from "./component/LoginForm";
-import SignupForm from "./component/Signup";
+import LoginForm from "./components/LoginForm";
+import SignupForm from "./components/Signup";
 
 const Authentication = ()=>{
     const [isLogin, setIsLogin] = useState(false);

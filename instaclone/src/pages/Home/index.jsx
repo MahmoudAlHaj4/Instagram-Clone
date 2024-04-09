@@ -3,7 +3,9 @@ import SideBar from "./component/sidebar/sidebar"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Reels from "./component/reels/reels";
+import Posts from "./component/posts/posts";
 import "./home.css"
+
 
 
 
@@ -21,7 +23,7 @@ const Home = ()=>{
                 <Reels />
             </div>
             <div className="posts">
-
+                <Posts />
             </div>
             </div>
             <div className="rec">

@@ -1,0 +1,65 @@
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.edit-modal {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-modal-content {
+    max-width: 400px; 
+    width: 100%;
+}
+
+
+.edit-modal-content h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+}
+
+.edit-modal-content input[type="text"],
+.edit-modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.edit-modal-content textarea {
+    height: 100px; 
+    overflow-y: auto; 
+}
+
+.edit-modal-content button {
+    background-color: #f44336; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-modal-content button:hover {
+    background-color: #d32f2f; 
+}
+.save button{
+    background-color: blue;
+}
+.modal-btn{
+    gap: 10px;
+}

@@ -38,7 +38,7 @@ const SideBar = ({setsetIsOpened})=>{
            </div>
            <div className="tools  ">
                 <div className="btns flex column">
-                    <button><FontAwesomeIcon icon={faHouse} /> Home</button>
+                    <button onClick={()=> navigate('/home')}><FontAwesomeIcon icon={faHouse}  onClick={()=> navigate('/home')}/> Home</button>
                     <button onClick={openSreachModal}>Search</button>
                     <button>Explore</button>
                     <button>Rells</button>

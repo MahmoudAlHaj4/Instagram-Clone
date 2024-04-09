@@ -47,7 +47,7 @@ const Profile = ()=>{
             </div>
                    
             </div>
-            
+            {isEditModalOpen && <Edit isOpen={isEditModalOpen} onClose={closeEditModal} />}
         </div>
     )
 }

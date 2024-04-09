@@ -4,11 +4,14 @@ import PostModal from "../Modals/Post Modal/PostsModal"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse ,faPlus} from '@fortawesome/free-solid-svg-icons';
 import SearchModal from "../Modals/Search Modal/SearchModal";
+import { useNavigate } from "react-router-dom";
+
 
 const SideBar = ({setsetIsOpened})=>{
     const [create,setCreate]= useState(false)
     const [isPostModalOpen, setIsPostModalOpen] = useState(false);
     const [isSearchModalOpen, setIsSreachModalOpen] = useState(false);
+    const navigate = useNavigate();
 
     const toggle = ()=>{
         setCreate(!create)
@@ -49,7 +52,7 @@ const SideBar = ({setsetIsOpened})=>{
                             <button>Video</button>
                         </>
                     )}
-                    <button>Profile</button>
+                    <button  onClick={() => navigate('/profile')}>Profile</button>
                 </div>
            </div>
            <div className="last flex column">

@@ -1,6 +1,18 @@
 import "./profile.css"
 import SideBar from "../sidebar/sidebar"
+import Edit from "../Modals/Edite Modal/edit"
+import React, { useState } from 'react';
+
 const Profile = ()=>{
+    const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+
+    const openEditModal = () => {
+        setIsEditModalOpen(true);
+    };
+
+    const closeEditModal = () => {
+        setIsEditModalOpen(false);
+    };
     return (
 
         <div className="Profile-page flex ">
@@ -17,7 +29,7 @@ const Profile = ()=>{
                     <div className="profile-info">
                         <div className="profile-heading flex">
                             <h2>Username</h2>
-                            <button>Edit profil</button>
+                            <button onClick={openEditModal}>Edit profil</button>
                             <button>Edit profil</button>
                             <button>Edit profil</button>
                         </div>

@@ -16,7 +16,7 @@ const Profile = ()=>{
     return (
 
         <div className="Profile-page flex ">
-            <div className="sb">
+            <div className="profile-side-bar">
                 <SideBar />
             </div>
             <div className="profile-side flex center column">

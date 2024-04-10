@@ -25,6 +25,11 @@ const Profile = ()=>{
                     <div className="profile-image flex center">
                      <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" alt="" />
                     </div>
+                <div className="user-info  ">
+                   <div className="user-detail flex ">
+                   <div className="username">
+                        <h1>Username</h1>
+                        <h3>name</h3>
                     </div>
                     <div className="profile-info">
                         <div className="profile-heading flex">

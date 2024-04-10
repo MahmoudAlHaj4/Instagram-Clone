@@ -18,13 +18,13 @@ const Profile = ()=>{
         <div className="Profile-page flex ">
             <div className="profile-side-bar">
                 <SideBar />
+                
             </div>
-            <div className="profile-side flex center column">
-                <div className="profile-box flex ">
-                    <div className="img-cont flex center">
-                        <div className="profile-img flex">
-                        <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg" alt="" />
-                        </div>
+            <div className="profile-summary flex column">
+                <div className="profile-details flex">
+                    <div className="profile-image flex center">
+                     <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" alt="" />
+                    </div>
                     </div>
                     <div className="profile-info">
                         <div className="profile-heading flex">

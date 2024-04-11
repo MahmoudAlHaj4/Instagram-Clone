@@ -1,7 +1,14 @@
 .Posts-page {
-    flex-wrap: wrap;
+    width: 550px;
+    margin: 30px 40px 40px 40px;
+    gap: 10px;
 }
-
+.posts{
+    /* background-color: red; */
+}
+.single-post{
+    margin-left: 30px;
+}
 .post {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -12,7 +19,11 @@
 
 .head {
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    margin-bottom:10px ;
+}
+.user-img{
+    align-items: center;
 }
 
 .user-img img {
@@ -28,12 +39,15 @@
 }
 
 .img-container img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+   
+    border: 0.1px solid rgb(128, 127, 127);
+    border-radius: 7px;
 }
 
-.icons {
-    padding: 10px;
+.footerIcon .post-icons {
+    align-items: center;
+    justify-content: space-between;
 }
 
 .caption {
@@ -46,4 +60,18 @@
 
 .add-comment {
     padding: 10px;
+}
+
+.user-reel{
+    width: 100%;
+    height: 80px;
+    align-items: center ;
+    gap: 10px;
+    /* background-color: red; */
+    margin-bottom: 10px;
+}
+
+.reel img{
+    width: 70px;
+    border-radius: 50%;
 }

@@ -13,22 +13,12 @@ import "./home.css"
 const Home = ()=>{
     // const [isOpend,setIsOpened] = useState(true)
     return (
-       <div className=" Homee flex">
-        <div className="sbar">
+       <div className=" Homee flex ">
+        <div className="home-side-bar">
             <SideBar />
-        </div >
-        <div className="pages flex">
-            <div className="container">
-                <div className="reels">
-                <Reels />
-            </div>
-            <div className="posts">
-                <Posts />
-            </div>
-            </div>
-            <div className="rec">
-
-            </div>
+        </div>
+        <div className="reels">
+            <Reels />
         </div>
        </div>
     )

@@ -1,24 +1,56 @@
 import React, { useRef, useState } from 'react';
+import axios from 'axios';
 import "./postmodal.css";
 
-const PostModal = ({ isOpen, onClose }) => {
+const PostModal = ({ isOpen, onClose, userId }) => {
     const [imagePreview, setImagePreview] = useState(null);
     const [textInput, setTextInput] = useState('');
+    const [img, setimg] = useState('');
+    const [caption, setCaption] = useState('');
     const fileInputRef = useRef(null);
 
     const handleFileUpload = (e) => {
         const file = e.target.files[0];
         if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setImagePreview(reader.result);
-            };
-            reader.readAsDataURL(file);
+            setImagePreview(URL.createObjectURL(file)); 
+            setimg(file); 
         }
+    
     };
 
     const handleTextInputChange = (e) => {
-        setTextInput(e.target.value);
+        setCaption(e.target.value)
+    };
+console.log(userId)
+    const handleCreatePost = async (e) => {
+        e.preventDefault();
+
+        
+        const formData = new FormData();
+        formData.append('user_id', userId);
+        formData.append('img', fileInputRef.current.files[0]);
+        formData.append('caption', caption);
+         localStorage.getItem('token');
+
+        try {
+            const response = await fetch(`http://127.0.0.1:8000/api/create`, {
+                method: 'POST',
+                body: formData
+            });
+            
+            const data = await response.json();
+            console.log(data)
+
+            if (response.ok) {
+                console.log('Post created successfully:', data.post);
+            } else {
+                console.log('Error creating post:', data.error);
+            }
+
+            
+        } catch (error) {
+            console.log( error);
+        }
     };
 
     return (
@@ -32,16 +64,16 @@ const PostModal = ({ isOpen, onClose }) => {
                         </div>
                         {imagePreview && (
                             <div className="image-preview">
-                                <img src={imagePreview} alt="Uploaded" />
+                                <img src={img} alt="Uploaded" />
                             </div>
                         )}
                         <textarea
                             className="text-input"
                             placeholder="Type anything..."
-                            value={textInput}
+                            value={caption}
                             onChange={handleTextInputChange}
                         ></textarea>
-                        <button className='upload-btn' onClick={onClose}>Create</button>
+                        <button className='upload-btn' onClick={handleCreatePost}>Create</button>
                         <button className="close-btn" onClick={onClose}>X</button>
                     </div>
                 </div>

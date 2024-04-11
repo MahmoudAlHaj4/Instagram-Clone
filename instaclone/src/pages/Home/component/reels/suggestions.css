@@ -1,0 +1,57 @@
+.suggestions{
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 20px;
+
+  /* background-color: blue; */
+}
+
+.suggestion-heading{
+    /* background-color: lawngreen; */
+    
+    font-size: 18px
+}
+
+.suggestion-names{
+   /* background-color: aqua; */
+
+  margin-left: 7px;
+  gap: 10px;
+
+  
+}
+
+.suggest-name{
+    justify-content: space-between;
+
+    margin-top: 15px;
+    font-size: 16px;
+    /* background-color: red; */
+}
+.follow-btn{
+  color: #0095f6;
+  font-weight: bold;
+  outline: none;
+  border: 0;
+  margin-right: 5px;
+  background-color: black;
+}
+
+.follow-btn:hover {
+    color: white;
+    cursor: pointer;
+}
+.name-info{
+    align-items: center;
+    /* background-color: red; */
+}
+.name-info p {
+    margin-left: 10px; 
+    font-size: 16px; 
+}
+
+.name-info img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}

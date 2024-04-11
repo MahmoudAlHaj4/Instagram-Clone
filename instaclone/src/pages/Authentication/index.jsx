@@ -12,9 +12,7 @@ const Authentication = ()=>{
     return (
         <div className="mainpage">
         <div className="home flex center">
-          <div className="insta">
-            <img src="https://www.instagram.com/images/instagram/xig/homepage/screenshots/screenshot2.png?__d=www" alt="" />
-          </div>
+         
           <div className="login-form flex ">
             <div className="box">
               {isLogin ? (

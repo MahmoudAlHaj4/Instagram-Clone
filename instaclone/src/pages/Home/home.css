@@ -1,36 +1,9 @@
-.Homee{
-    width: 100%;
-    height: 100vh;
-    /* background-color: blue; */
-}
-.sbar{
-    width: 20%;
-    /* background-color: aqua; */
-    height: 100vh;
-}
-.pages{
-    width: 100%;
-    height: 100vh;
-    /* background-color: gray; */
-    justify-content: space-around;
-}
-.container{
-    width: 50%;
-    height: 100vh;
-    /* background-color: blueviolet; */
+
+.home-side-bar{ 
+    position: relative;
+    flex: 0.2;
+   
 }
 .reels{
-    /* background-color: red; */
-    width: 100%;
-    height: 150px;
-}
-.posts{
-    width: 100%;
-    height: 80vh;
-    /* background-color: lawngreen; */
-}
-.rec{
-    width: 40%;
-    /* background-color: saddlebrown; */
-    height: 200px;
+    flex: 0.8;
 }

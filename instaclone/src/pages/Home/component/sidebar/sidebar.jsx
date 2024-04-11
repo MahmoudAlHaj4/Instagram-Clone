@@ -1,9 +1,16 @@
 import "./sidebar.css"
 import { useState } from "react"
 import PostModal from "../Modals/Post Modal/PostsModal"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse ,faPlus} from '@fortawesome/free-solid-svg-icons';
+import HomeIcon from '@mui/icons-material/Home';
+import SearchIcon from '@mui/icons-material/Search';
+import ExploreIcon from '@mui/icons-material/Explore';
+import ForumIcon from '@mui/icons-material/Forum';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import MovieCreationIcon from '@mui/icons-material/MovieCreation';
 import SearchModal from "../Modals/Search Modal/SearchModal";
+import GestureIcon from '@mui/icons-material/Gesture';
+import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from "react-router-dom";
 
 
@@ -32,36 +39,67 @@ const SideBar = ({setsetIsOpened})=>{
     };
 
     return (
-        <div className="main">
-           <div className="heading flex center">
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYkA4eLYzO589zptEK11phwXKTnAoqtNpUnXDdVOPEQw&s" alt="" />
-           </div>
-           <div className="tools  ">
-                <div className="btns flex column">
-                    <button onClick={()=> navigate('/home')}><FontAwesomeIcon icon={faHouse}  onClick={()=> navigate('/home')}/> Home</button>
-                    <button onClick={openSreachModal}>Search</button>
-                    <button>Explore</button>
-                    <button>Rells</button>
-                    <button>Messages</button>
-                    <button>Notification</button>
-                    <button onClick={toggle}>create</button>
+        <div className="sidebarmain flex column ">
+           
+                <img className="sid-logo" src="https://as2.ftcdn.net/v2/jpg/03/97/48/01/1000_F_397480131_ifXqWNKVteOhczWDJBeODrnMIbVcVp13.jpg" alt="" />
 
-                    {create && (
+                <div className="kkk ">
+
+                    <button className = "side-btn">
+                        <HomeIcon />
+                        <span  onClick={()=> navigate('/home')}>Home</span>
+                    </button>
+
+                        <button className = "side-btn">
+                        <SearchIcon />
+                        <span  onClick={openSreachModal}>Search</span >
+                    </button>
+                    <button className = "side-btn">
+                            <ExploreIcon />
+                            <span >Explore</span>
+                    </button>
+                    <button className = "side-btn">
+                            <MovieCreationIcon />
+                            <span className = "side-btn">Reels</span>
+                    </button >
+                    <button className = "side-btn">
+                            <ForumIcon />
+                            <span >Messages</span>
+                    </button>
+                    <button className = "side-btn">
+                            <FavoriteBorderIcon />
+                            <span >Notification</span  >
+                    </button >
+                    <button className = "side-btn">
+                            <AddBoxIcon />
+                            <span  onClick={toggle}>create</span>
+                    </button >
+                    
+                    <button className = "side-btn">
+                        {create && (
                         <>
-                            <button onClick={openPostModal}><FontAwesomeIcon icon={faPlus} /> Post</button>
-                            <button>Video</button>
+                            <span onClick={openPostModal}>Post</span  >
+                            <span >Video</span >
                         </>
                     )}
-                    <button  onClick={() => navigate('/profile')}>Profile</button>
+                    </button >
+                    <button className = "side-btn">
+                        <span  onClick={() => navigate('/profile')}>Profile</span >
+                    </button>
                 </div>
-           </div>
-           <div className="last flex column">
-            <div className="more flex column btns">
-                <button>Thread</button>
-                <button>More</button>
-            </div>
-           </div>
-           <PostModal isOpen={isPostModalOpen} onClose={closePostModal} />
+                <div className="side-btn_more">
+                <button className="side-btn">
+                        <GestureIcon />
+                        <span >Thread</span >
+                    </button  >
+                    <button className="side-btn">
+                        <MenuIcon />
+                        <span >More</span>
+                    </button >
+                </div>
+           
+            
+           <PostModal isOpen={isPostModalOpen} onClose={closePostModal} userId={'1'}/>
            <SearchModal isOpen={isSearchModalOpen} onClose={closeSearchModal} />
         </div>
     )

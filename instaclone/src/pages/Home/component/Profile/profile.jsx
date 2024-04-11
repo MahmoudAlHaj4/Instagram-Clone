@@ -37,18 +37,15 @@ const Profile = ()=>{
                         <button>Edit</button>
                         <button>Edit</button>
                     </div>
-                        <div className="followers flex">
-                            <p>1 posts</p>
-                            <p>3 followers</p>
-                            <p> 20 following</p>
-                        </div>
+                   </div>
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dolores.</p>
                     <div>
 
                     </div>
                      
                 </div>
-            </div>
+               
+                </div>
                 <hr />
                <div className="profile-posts">
                 <div className="line flex center">
@@ -57,7 +54,7 @@ const Profile = ()=>{
                     <h3>Saved</h3>
                 </div>
                 <div className='profile-posts flex center'>
-                   
+                
                 <div className='imgs-container'>
                 <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80" alt="" />
                 </div>
@@ -76,7 +73,8 @@ const Profile = ()=>{
                 </div>
                </div>
             </div>
-            {isEditModalOpen && <Edit isOpen={isEditModalOpen} onClose={closeEditModal} />}
+               
+            {isEditModalOpen && <Edit isOpen={isEditModalOpen} onClose={closeEditModal} />}       
         </div>
     )
 }

@@ -23,8 +23,6 @@
 .profile-image{
     width: 50%;
     /* background-color: aqua; */
-    width: 20%;
-    height: 100vh;
 }
 .user-info {
     /* background-color: blanchedalmond; */
@@ -44,11 +42,6 @@
     border-radius: 7px;
     cursor: pointer;
 }
-.profile-img{
-    width: 30%;
-    height: 150px;
-    background-color: white;
-    border-radius: 50%;
 
 .user-info button{
     padding: 10px 20px;

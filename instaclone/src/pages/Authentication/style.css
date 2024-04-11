@@ -4,17 +4,19 @@
     /* background-color: aqua; */
 
 }
+
 .home{
     width: 100%;
     height: 100vh;
     /* background-color: aqua; */
+    /* border: 1px solid white; */
 }
 .login-form{
-    width: 23%;
+    width: 25%;
     height: 600px;
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
+    
     gap: 10px;
 }
 .insta{
@@ -23,8 +25,8 @@
     /* background-color: blue; */
 }
 .login{
-    gap: 10px;
-    border: 1px solid black;
+    gap: 5px;
+    border: 1px solid white;
 }
 .heading{
     width: 100%;
@@ -42,7 +44,7 @@
     padding:7px 15px;
     border-radius: 8px;
     background-color: rgb(142, 142, 243);
-    color: white;
+    
 }
 .links button{
     width: 80%;
@@ -54,7 +56,7 @@
 .inputs{
     /* background-color: lawngreen; */
     width: 100%;
-    height: 200px;
+    height: 180px;
     gap: 10px;
 }
 .line {
@@ -72,11 +74,9 @@
     width: 100%;
     /* background-color: rgb(165, 122, 40); */
     height: 70px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
-
-
 .imgs img{
     width: 120px;
     height: 40px;
@@ -85,26 +85,29 @@
 .signup-form {
     width: 100%;
     /* background-color: red; */
-    border: 1px solid black;
+    border: 1px solid white;
 
     height: 700px;
     gap: 10px;
    
 }
 .links{
-    height: 150px;
+    height: 130px;
     /* background-color: aqua; */
 
 }
-p{
+.link p{
     padding-left: 10px;
     /* background-color: aqua; */
     /* width: 80%; */
     font-size: small;
 }
-.pp{
-    gap: 10px;
+.pp p{
+    text-align: center;
+    padding-bottom: 10px;
+    
 }
+
 .s-inputs{
     /* background-color: lawngreen; */
     height: 400px;
@@ -116,7 +119,7 @@ p{
     padding:7px 15px;
     border-radius: 8px;
     background-color: buttonface;
-    color: white;
+    
 }
 .s-inputs button{
     width: 80%;
@@ -131,3 +134,25 @@ p{
     background-color: white;
     height: fit-content;
 }
+line {
+    border: none;
+    border-top: 1px solid white;}
+
+@media (max-width: 768px) {
+    .login-form {
+        width: 70%;
+    }
+
+    .insta {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form, .insta {
+        width: 90%;
+    }
+}
+
+
+

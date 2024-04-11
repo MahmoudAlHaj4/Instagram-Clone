@@ -1,35 +1,49 @@
-.main{
-    width: 15%;
-    height: 100vh;
-    position: fixed;
+.sidebarmain{
+  
+  position: fixed;
+  /* background-color: red; */
+  justify-content: space-between;
+  z-index: 1;
 }
-.heading{
-    width: 100%;
-    height: 100px;
-    
-}
-.tools{
-    width: 100%;
-    height: 60vh;
-    justify-content: start;
-    gap: 10px;
+.sid-logo{
+    width: 125px;
+    margin: 25px;
 }
 
 
- .btns button {
-    height: 57px;
-    padding: 10px 40px;
-    border: none;
-    outline: none;
-    background-color: white;
-    font-size: 15px;
+
+ .kkk {
+   display: flex;
+   flex-direction: column;
+   /* background-color: aqua; */
+   
 }
 
-.btns button:hover{
-    background-color: rgb(247, 246, 246);
+.side-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  background: 0;
+  border: 0;
+  margin: 5px 10px 5px 10px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  width: 100%;
 }
-.last{
-    width: 100%;
-    height: 26vh;
-    justify-content: end;
+
+.side-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.128);
+}
+
+.side-btn > span {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.side-btn__more {
+  position: fixed;
+  bottom: 3px;
 }

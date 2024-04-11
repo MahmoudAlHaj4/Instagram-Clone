@@ -1,12 +1,8 @@
-.reel{
-    width: 80%;
-    height: 120px;
-    /* background-color: aqua; */
-    gap: 10px;
+.leftside{
+    flex: 0.7;
+    /* background-color: blue ; */
 }
-.child{
-    width: 15%;
-    height: 70px;
-    background-color: gray;
-    border-radius: 50%;
+.rightside{
+    flex: 0.3;
+    /* background-color: red; */
 }
